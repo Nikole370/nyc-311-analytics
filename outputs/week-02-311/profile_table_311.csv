@@ -1,0 +1,18 @@
+column,dtype,missing_pct,n_unique,sample,viz_risk
+Unique Key,int64,0.0,20855981,68688622,ID — no agregar directo
+Created Date,datetime64[us],0.0,16773747,2026-04-17 02:05:41,Fecha — verificar formato mixto
+Closed Date,datetime64[us],1.9,13674398,2026-04-17 02:02:33,Fecha — verificar formato mixto
+Agency,str,0.0,21,NYPD,BAJO — uso directo
+Problem,str,0.0,272,Noise - Residential,MEDIO — requiere agrupación
+Problem Detail,str,2.9,1292,Loud Music/Party,Texto libre — alta cardinalidad
+Incident Zip,object,1.4,872,11420.0,MEDIO — requiere agrupación
+Status,str,0.0,8,In Progress,BAJO — uso directo
+Community Board,str,0.2,78,10 QUEENS,BAJO — uso directo
+Council District,object,2.3,103,28.0,BAJO — uso directo
+Police Precinct,str,0.0,78,Precinct 106,BAJO — uso directo
+Borough,str,0.2,6,QUEENS,BAJO — uso directo
+Open Data Channel Type,str,0.0,5,MOBILE,BAJO — uso directo
+Latitude,str,1.9,1371468,"40,67973819305",Geo — verificar coordenadas válidas
+Longitude,str,1.9,1371494,"-73,8229192011",Geo — verificar coordenadas válidas
+resolution_hours,float64,1.9,2857662,0.0,ALTO — cardinalidad muy alta para gráfico
+resolution_days,float64,1.9,2857662,0.0,ALTO — cardinalidad muy alta para gráfico

@@ -1,0 +1,17 @@
+column,missing_pct_before,n_unique_before,missing_pct_after,n_unique_after
+Closed Date,2.96,88295,2.96,88295
+Problem Detail,2.67,770,2.67,770
+Council District,2.16,51,2.16,51
+Latitude,1.65,63068,1.65,63068
+Longitude,1.65,63068,1.65,63068
+Incident Zip,0.98,379,0.98,216
+Agency,0.0,16,0.0,16
+Unique Key,0.0,94500,0.0,94500
+Status,0.0,7,0.0,7
+Problem,0.0,187,0.0,187
+Created Date,0.0,94218,0.0,94218
+Community Board,0.0,76,0.0,76
+Borough,0.0,6,0.11,5
+Police Precinct,0.0,78,0.0,78
+Open Data Channel Type,0.0,5,0.0,5
+year,0.0,4,0.0,4

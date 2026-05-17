@@ -1,0 +1,188 @@
+Problem,Problem Detail,problem_family
+Illegal Parking,Blocked Hydrant,Tráfico / Estacionamiento
+Street Condition,Defective Hardware,Infraestructura vial
+Noise - Vehicle,Car/Truck Music,Ruido
+Noise - Street/Sidewalk,Loud Music/Party,Ruido
+Noise - Helicopter,Other,Ruido
+DOOR/WINDOW,DOOR,Otros
+Damaged Tree,Branch Cracked and Will Fall,Árboles / Parques
+Blocked Driveway,No Access,Tráfico / Estacionamiento
+PLUMBING,TOILET,Otros
+APPLIANCE,REFRIGERATOR,Otros
+Noise - Residential,Loud Music/Party,Ruido
+PAINT/PLASTER,WALL,Otros
+FLOORING/STAIRS,FLOOR,Otros
+Street Light Condition,Street Light Out,Infraestructura vial
+UNSANITARY CONDITION,GARBAGE/RECYCLING STORAGE,Otros
+WATER LEAK,HEAVY FLOW,Agua / Alcantarillado
+Illegal Dumping,Removal Request,Otros
+Abandoned Vehicle,With License Plate,Otros
+Traffic,Drag Racing,Otros
+GENERAL,COOKING GAS,Otros
+Rodent,Rat Sighting,Plagas / Roedores
+Consumer Complaint,Other Store (Non-Food),Otros
+Standing Water,Other - Explain Below,Agua / Alcantarillado
+ELECTRIC,POWER OUTAGE,Otros
+Dead/Dying Tree,Planted More Than 2 Years Ago,Árboles / Parques
+Missed Collection,Bulky Trash,Otros
+Harboring Bees/Wasps,Bees/Wasps - Not a beekeper,Otros
+Building/Use,Illegal Conversion Of Residential Building/Space,Otros
+Encampment,,Otros
+Traffic Signal Condition,Controller,Otros
+SAFETY,FIRE ESCAPE,Otros
+Derelict Vehicles,Derelict Vehicles,Otros
+Elevator,Elevator - Single Device On Property/No Alternate Service,Otros
+Air Quality,"Air: Dust, Other (Use Comments) (AE5)",Otros
+HEAT/HOT WATER,APARTMENT ONLY,Calefacción / Agua Caliente
+Plumbing,Plumbing Work - Illegal/No Permit/Standpipe/Sprinkler,Otros
+Noise,Noise: Construction Before/After Hours (NM1),Ruido
+Litter Basket Request,New Basket,Saneamiento
+Sidewalk Condition,Blocked - Construction,Infraestructura vial
+Sewer,Sewer Backup (Use Comments) (SA),Agua / Alcantarillado
+Water System,Hydrant Running (WC3),Agua / Alcantarillado
+Vendor Enforcement,Non-Food Vendor,Otros
+Root/Sewer/Sidewalk Condition,Trees and Sidewalks Program,Infraestructura vial
+For Hire Vehicle Complaint,Driver Complaint - Passenger,Otros
+Asbestos,Asbestos Complaint (B1),Otros
+Illegal Tree Damage,Branches Damaged,Árboles / Parques
+General Construction/Plumbing,Fence - None/Inadequate,Otros
+Animal in a Park,Animal Waste,Árboles / Parques
+Homeless Person Assistance,Chronic,Otros
+Food Establishment,Food Contaminated,Otros
+Curb Condition,Broken Curb,Otros
+Cannabis Retailer,Sales to Minors Under 21,Otros
+Overgrown Tree/Branches,Hitting Phone/Cable Lines,Árboles / Parques
+Water Quality,Clear Water With Other Particles (Use Comments) (QEZ),Agua / Alcantarillado
+Real Time Enforcement,Work Without A Permit - Occupied Multiple Dwelling,Otros
+Smoking or Vaping,Allowed in Smoke Free Area,Otros
+Dirty Condition,Trash,Saneamiento
+Green Taxi Complaint,Driver Complaint - Passenger,Otros
+Food Poisoning,1 or 2,Otros
+Dead Animal,Cat,Otros
+Maintenance or Facility,Structure - Outdoors,Otros
+Noise - Commercial,Loud Music/Party,Ruido
+Drug Activity,Use Outside,Otros
+Graffiti,Police Report Not Requested,Graffiti
+Unsanitary Animal Pvt Property,Dog,Otros
+Non-Emergency Police Matter,Trespassing,Otros
+Lead,Lead Kit Request (Residential) (L10),Otros
+Water Conservation,Illegal Use Of A Hydrant (CIN),Agua / Alcantarillado
+Taxi Complaint,Driver Complaint - Non Passenger,Otros
+Special Projects Inspection Team (SPIT),Sign/Awning/Marquee - Illegal/No Permit,Otros
+Animal-Abuse,Other (complaint details),Otros
+Noise - Park,Loud Music/Party,Ruido
+Highway Condition,Pothole - Highway,Otros
+Residential Disposal Complaint,Waste Not Separated,Otros
+Panhandling,,Otros
+Indoor Air Quality,Other (Explain Below),Otros
+Obstruction,Cone,Otros
+Industrial Waste,Concrete In Catch Basin (IEA),Otros
+Sanitation Worker or Vehicle Complaint,Inappropriate Behavior,Saneamiento
+Outdoor Dining,Sidewalk Zone Blocked,Otros
+Urinating in Public,,Otros
+Street Sweeping Complaint,Inadequate Sweeping,Infraestructura vial
+Mobile Food Vendor,Smoke/Odor,Otros
+Emergency Response Team (ERT),After Hours Work - Illegal,Otros
+Street Sign - Dangling,Street Cleaning - ASP,Infraestructura vial
+Abandoned Bike,Chained to Public Property,Otros
+Illegal Posting,Poster or Sign,Otros
+Illegal Animal Kept as Pet,Ferret,Otros
+Street Sign - Missing,Stop,Infraestructura vial
+Investigations and Discipline (IAD),Plumbing Work - Unlicensed/Illegal/Improper Work In Progress,Otros
+Street Sign - Damaged,One Way,Infraestructura vial
+Boilers,Boiler - Defective/Inoperative/No Permit,Otros
+Lost Property,Bag/Wallet,Otros
+Day Care,Day Care Facility,Otros
+Uprooted Stump,Remove Stump,Otros
+Violation of Park Rules,Unlicensed Vendors,Árboles / Parques
+Lot Condition,Trash,Otros
+Commercial Disposal Complaint,Waste Left in Front of Residence,Otros
+LinkNYC,Damaged/Defective,Otros
+Unleashed Dog,Unleashed Dog in Public,Otros
+Noise - House of Worship,Loud Talking,Ruido
+Illegal Fireworks,,Otros
+Drinking,In Public,Otros
+Taxi Report,Driver Report - Passenger,Otros
+New Tree Request,For One Address,Árboles / Parques
+ELEVATOR,MAINTENANCE,Otros
+Broken Parking Meter,Out of Order,Árboles / Parques
+Electrical,Electrical Wiring Defective/Exposed,Otros
+Dumpster Complaint,Blocking Sidewalk or Street,Otros
+School Maintenance,Other School Condition,Otros
+Unsanitary Pigeon Condition,Pigeon Waste,Otros
+Wood Pile Remaining,Remove Debris,Otros
+Scaffold Safety,Suspended (Hanging) Scaffolds - No Pmt/Lic/Dangerous/Accident,Otros
+Bus Stop Shelter Complaint,Damaged Bench,Otros
+Tattooing,Tattoo Artist Unlicensed,Otros
+Snow or Ice,Roadway,Otros
+Bridge Condition,Graffiti - Bridge,Otros
+Non-Residential Heat,Inadequate or No Heat,Calefacción / Agua Caliente
+OUTSIDE BUILDING,ROOFING,Otros
+Municipal Parking Facility,Snow Removal,Árboles / Parques
+Bike Rack,Damaged/Bent/Loose/Leaning,Otros
+Mold,Public Complaint - Comm Location,Otros
+Public Toilet,New Automatic Public Toilet Request,Otros
+Bench,Missing,Otros
+Indoor Sewage,Sewage Leak,Otros
+BEST/Site Safety,Demolition - Unsafe,Otros
+Construction Lead Dust,In Common Areas,Otros
+Litter Basket Complaint,Overflowing,Saneamiento
+Hazardous Materials,Chemical Odor (HD1),Otros
+Illegal Animal Sold,Other,Otros
+Bike/Roller/Skate,,Otros
+Beach/Pool/Sauna Complaint,Safety Equipment/Signs,Otros
+Ferry Inquiry,Lost and Found,Otros
+Pet Sale,Animals Sold From Residence,Otros
+Special Operations,Special Operations Compliance Inspection,Otros
+Drinking Water,Illness Caused by Drinking Water,Agua / Alcantarillado
+Special Natural Area District (SNAD),Illegal Tree Removal/Topo. Change in SNAD,Otros
+Construction Safety Enforcement,CSC - Monitoring Tracking,Otros
+Ferry Complaint,General Complaint,Otros
+Recycling Basket Complaint,Overflowing,Otros
+For Hire Vehicle Report,Car Service Company Report,Otros
+Animal Facility - No Permit,,Otros
+Bike/Roller/Skate Chronic,,Otros
+Plant,Plants- Odor Related Problems (PO1),Otros
+Unspecified,Unspecified,Otros
+Taxi Compliment,Driver Compliment,Otros
+Posting Advertisement,Building,Otros
+Tobacco or Non-Tobacco Sale,Original Labels or Packaging Not Kept,Otros
+Mosquitoes,Large Number of Mosquitoes,Otros
+E-Scooter,Improperly Parked or Abandoned,Otros
+Found Property,Electronics/Phones,Otros
+Poison Ivy,,Otros
+Dept of Investigations,Integrity Complaint Referral,Otros
+Disorderly Youth,Playing in Unsuitable Place,Otros
+Building Condition,Bikes in Buildings,Otros
+Highway Sign - Missing,Other/Unknown,Otros
+Cranes and Derricks,Crane/Suspension Scaffold - No Permit/License/Cert./Unsafe/Illegal,Otros
+Pet Shop,Dogs or Cats Not Sold,Otros
+Public Payphone Complaint,Graffiti/Litter on Phone,Otros
+Tanning,Equipment Maintenance,Otros
+Bus Stop Shelter Placement,New Bus Stop Shelter Placement,Otros
+Lifeguard,Too Few on Duty,Otros
+Institution Disposal Complaint,Storage Area Not Provided,Otros
+Highway Sign - Dangling,Exit/Route,Otros
+Smoking,Flavored Tobacco,Otros
+Building Drinking Water Tank,Unsanitary Condition,Agua / Alcantarillado
+Incorrect Data,Collection Days,Otros
+DEP Street Condition,Cave-in,Infraestructura vial
+Bike Rack Condition,Bike Rack Repair,Otros
+Calorie Labeling,Failure to Post Calorie Information,Otros
+Electronics Waste Appointment,Ewaste appointment,Otros
+Adopt-A-Basket,Adopt-A-Basket,Otros
+Water Leak,Heavy Flow,Agua / Alcantarillado
+Safety,Fire Escape,Otros
+Paint/Plaster,Ceiling,Otros
+Electric,Wiring,Otros
+General,Cooking Gas,Otros
+Unsanitary Condition,Mold,Otros
+Door/Window,Window Frame,Otros
+Appliance,Refrigerator,Otros
+Flooring/Stairs,Floor,Otros
+Unstable Building,Shaking/Vibrating,Otros
+Heat/Hot Water,Entire Building,Calefacción / Agua Caliente
+Sewer Maintenance,Backup,Agua / Alcantarillado
+Water Drainage,Drain/Pipe Clogged,Agua / Alcantarillado
+Water Maintenance,Water in Basement,Agua / Alcantarillado
+Highway Sign - Damaged,Other/Unknown,Otros

@@ -1,0 +1,11 @@
+question,is_viable,variables,reason
+¿Cuántas solicitudes hay por Borough y año?,True,"Borough, Created Date",Ambas columnas disponibles y completas
+¿Qué tipos de Problem son más frecuentes?,True,Problem,"Columna de bajo nivel de nulos, cardinalidad manejable"
+¿Cuál es el tiempo promedio de resolución por Agency?,True,"Agency, Created Date, Closed Date",Variable derivada resolution_hours calculable; descartar registros sin Closed Date
+¿Qué canal (Open Data Channel Type) genera más solicitudes?,True,Open Data Channel Type,"Cardinalidad muy baja (Phone/Online/Other/Unknown), sin nulos significativos"
+¿Cómo se distribuyen espacialmente los incidentes en NYC?,True,"Latitude, Longitude, Borough",Coordenadas disponibles; filtrar coordenadas fuera de rango antes de mapear
+¿El volumen de solicitudes ha crecido desde 2020?,True,Created Date,"Serie temporal directa, agrupar por mes/año"
+¿Están satisfechos los ciudadanos con la respuesta?,False,Ninguna,No existe variable de satisfacción observada en el dataset
+¿Los puentes que fallan más se ubican en barrios pobres?,False,Bridge Highway Name (sparse),Bridge cols tienen >90% nulos (solo aplica a incidentes en puentes). No hay variable socioeconómica.
+¿Cuántas llamadas recibe cada precinto de policía por tipo de crimen?,False,"Police Precinct, Problem","El dataset es de servicios 311, no de crímenes. Hay solicitudes al NYPD pero no clasificadas por delito"
+¿Los vehículos TLC infraccionados son mayormente de cierto borough?,False,"Vehicle Type, Taxi Company Borough (sparse)",Columnas TLC tienen >90% nulos — solo aplican cuando Agency = TLC
