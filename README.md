@@ -12,8 +12,8 @@ Análisis exploratorio y visual de ~20.8 millones de solicitudes de servicio ciu
 | Etapa | Estado | Notebook |
 |---|---|---|
 | 01 · Perfilado y granularidad | ✅ Completo | `notebooks/01-perfilado-311.ipynb` |
-| 02 · Limpieza de datos | 🔄 En progreso | — |
-| 03 · Modelado de fuentes | ⏳ Pendiente | — |
+| 02 · Limpieza de datos | ✅ Completo | `notebooks/02-limpieza-311.ipynb` |
+| 03 · Modelado de fuentes | ✅ Completo | `notebooks/03-modelado-311.ipynb` |
 | 04 · Visualizaciones Tableau | ⏳ Pendiente | — |
 
 ---
