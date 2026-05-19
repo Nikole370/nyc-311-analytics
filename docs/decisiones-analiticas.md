@@ -86,19 +86,31 @@ Estadísticas reales de resolution_hours:
 
 ## Etapa 02 · Limpieza de datos
 
-> 🔄 **En progreso** — se documentarán las decisiones al completar el notebook de limpieza.
+### D6 · Tratamiento de nulos en `Borough`
+**Decisión**: eliminar filas con `Borough` nulo (0.2% del total).  
+**Por qué**: Borough es clave foránea del modelo estrella — sin Borough, la fila no puede relacionarse con `dim_geo` y queda huérfana en Tableau. Imputar un borough arbitrario introduciría error geográfico.
 
-Decisiones previstas a documentar:
-- Tratamiento de nulos en `Borough` (0.2%) y `Community Board` (0.2%)
-- Homologación de categorías en `Problem` (272 valores únicos → posible agrupación)
-- Manejo de `Council District` como `object` en lugar de `int`
-- Tipo de dato de `Latitude`/`Longitude` (aparece como `str` con comas decimales en lugar de puntos — problema de localización)
+### D7 · Agrupación de `Problem` en 11 familias temáticas
+**Decisión**: crear `problem_family` agrupando los 272 valores únicos de `Problem` en 11 categorías semánticas.  
+**Alternativa descartada**: top-N por frecuencia.  
+**Por qué**: top-N agrupa por popularidad, no por significado — Ruido nocturno y Ruido de construcción quedarían en grupos distintos aunque pertenecen a la misma familia. La agrupación semántica es defendible analíticamente; la frecuencial no lo es.
+
+### D8 · Valores negativos en `resolution_hours`
+**Decisión**: excluir registros con `Closed Date < Created Date`.  
+**Por qué**: es un error de captura, no un valor faltante. Imputar sería introducir información falsa.
 
 ---
 
 ## Etapa 03 · Modelado de fuentes
 
-> ⏳ **Pendiente**
+### D9 · Modelo estrella vs tabla plana
+**Decisión**: modelo estrella con `fact_311` + 4 dimensiones.  
+**Por qué**: la tabla plana repite atributos de Borough, Agency y Problem en cada una de las 94,500 filas. El modelo estrella elimina esa redundancia, garantiza que Tableau no duplique métricas al hacer joins, y hace el pipeline auditable en Git.
+
+### D10 · Agregaciones pre-calculadas en Python
+**Decisión**: exportar `agg_borough_year`, `agg_resolucion_agencia`, `agg_hora`, `agg_familia_problema` como CSVs independientes.  
+**Alternativa descartada**: campos calculados en Tableau.  
+**Por qué**: los campos calculados de Tableau no se versionan en Git. Las agregaciones en Python son auditables, reproducibles y consistentes entre todas las vistas del workbook.
 
 ---
 
