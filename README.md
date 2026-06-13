@@ -62,14 +62,20 @@ NYC-311-ANALYTICS/
 ├── docs/
 │   └── decisiones-analiticas.md  ← justificaciones metodológicas detalladas
 ├── notebooks/
-│   └── perfilado-311.ipynb        ← perfilado, granularidad y viabilidad de preguntas
+│   ├── 01-perfilado-311.ipynb     ← perfilado, granularidad y viabilidad de preguntas
+│   ├── 02-limpieza-311.ipynb      ← limpieza y bitácora de transformaciones
+│   ├── 03-modelado-311.ipynb      ← modelo estrella y fuentes para Tableau
+│   └── _shared.py                 ← utilidades compartidas (rutas, perfilado, exportación)
 ├── outputs/
-│   ├── profile_table_311.csv      ← perfil de las 17 columnas seleccionadas
-│   ├── clean_sample_tableau.csv   ← 20.4M filas con coordenadas válidas para Tableau
-│   └── question_matrix.csv        ← viabilidad de preguntas analíticas
+│   ├── week-02-311/               ← perfilado: profile_table_311.csv, clean_sample_tableau.csv, question_matrix.csv
+│   ├── week-03-311/                ← limpieza: 311_clean.csv, cleaning_log.csv, cleaning_comparison.csv
+│   └── week-04-311/                ← modelado: fact_311.csv + dimensiones + agregaciones para Tableau
+├── tableau/                        ← workbook (E5/E6)
 ├── .gitignore
 └── README.md
 ```
+
+Todas las rutas de salida (`OUTPUT_DIR`, `ensure_output_dir`/`save_for_tableau` en `_shared.py`) se resuelven respecto a la raíz del proyecto, no al directorio `notebooks/`, para que los CSVs queden siempre en `outputs/week-XX-311/` listos para conectar en Tableau.
 
 ---
 

@@ -5,6 +5,11 @@ import random
 import numpy as np
 import pandas as pd
 
+# Raíz del proyecto: _shared.py vive en notebooks/, por lo que la raíz
+# es el directorio padre. Se calcula desde __file__ para que las rutas
+# de salida no dependan del cwd desde el que se ejecute el notebook.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 REGION_STATE_LATLON = {
     "North": [("Piura", -5.1945, -80.6328), ("Chiclayo", -6.7714, -79.8409)],
     "South": [("Arequipa", -16.4090, -71.5375), ("Tacna", -18.0146, -70.2536)],
@@ -24,7 +29,7 @@ def set_random_seed(seed: int = 42):
 
 
 def ensure_output_dir(week_slug: str) -> Path:
-    base = Path('outputs') / week_slug
+    base = PROJECT_ROOT / 'outputs' / week_slug
     base.mkdir(parents=True, exist_ok=True)
     return base
 
