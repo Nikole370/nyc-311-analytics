@@ -34,6 +34,17 @@ def ensure_output_dir(week_slug: str) -> Path:
     return base
 
 
+def save_for_tableau_final(df: pd.DataFrame, name: str) -> Path:
+    """Guarda una copia consolidada del CSV final en outputs/tableau/,
+    la carpeta única que se conecta en Tableau (ver plan en
+    nyc-311-analytics-docs/plan-procesamiento-completo-tableau.md)."""
+    base = PROJECT_ROOT / 'outputs' / 'tableau'
+    base.mkdir(parents=True, exist_ok=True)
+    path = base / f'{name}.csv'
+    df.to_csv(path, index=False)
+    return path
+
+
 def make_base_sales(n: int = 2500, seed: int = 42) -> pd.DataFrame:
     set_random_seed(seed)
     dates = pd.date_range('2023-01-01', '2024-12-31', freq='D')
