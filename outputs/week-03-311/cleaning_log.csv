@@ -1,12 +1,12 @@
 field,problem,rule,impact
-Created Date / Closed Date,dtype object — fechas sin parsear,"pd.to_datetime(errors=""coerce"") aplicado en carga por chunks","Habilitado cálculo temporal; 2,801 fechas de cierre ausentes"
-Created Date → year / month / day_of_week / hour_of_day / date,fecha en bruto — no usable directamente en Tableau,dt.year / dt.month / dt.day_name() / dt.hour / dt.normalize(),6 campos derivados; 0 registros fuera de rango eliminados
-resolution_hours / resolution_days,campo derivado no existe en raw; valores negativos y extremos presentes,Closed Date - Created Date; negativos y > 5 años → NaN,37 negativos + 0 extremos invalidados
-Borough,"""Unspecified"" como categoría inválida; mayúsculas inconsistentes","str.strip().str.title(); replace(""Unspecified"" → NaN)",106 registros sin borough válido → NaN
-Latitude / Longitude,dtype str; separador decimal con coma; coordenadas fuera de NYC,"str.replace("","", "".""); pd.to_numeric; bounding box NYC → NaN si fuera de rango","1,559 coordenadas inválidas → NaN; dtype ahora float64"
-Incident Zip,"dtype object; valores como ""11420.0""; ZIPs de longitud variable","strip + remove "".0"" + extract 5 dígitos con regex",Cardinalidad reducida a 216 ZIPs válidos
-Agency,posible variación de capitalización / espacios,str.strip().str.upper(),cardinalidad 16 → 16
-Status,posible variación de capitalización / espacios,str.strip().str.upper(),cardinalidad 7 → 7
-Open Data Channel Type,posible variación de capitalización / espacios,str.strip().str.upper(),cardinalidad 5 → 5
+Created Date / Closed Date,dtype object â€” fechas sin parsear,"pd.to_datetime(errors=""coerce"") aplicado en carga por chunks","Habilitado cÃ¡lculo temporal; 404,928 fechas de cierre ausentes"
+Created Date â†’ year / month / day_of_week / hour_of_day / date,fecha en bruto â€” no usable directamente en Tableau,dt.year / dt.month / dt.day_name() / dt.hour / dt.normalize(),6 campos derivados; 0 registros fuera de rango eliminados
+resolution_hours / resolution_days,campo derivado no existe en raw; valores negativos y extremos presentes,Closed Date - Created Date; negativos y > 5 aÃ±os â†’ NaN,"46,334 negativos + 1,396 extremos invalidados"
+Borough,"""Unspecified"" como categorÃ­a invÃ¡lida; mayÃºsculas inconsistentes","str.strip().str.title(); replace(""Unspecified"" â†’ NaN)","77,142 registros sin borough vÃ¡lido â†’ NaN"
+Latitude / Longitude,dtype str; separador decimal con coma; coordenadas fuera de NYC,"str.replace("","", "".""); pd.to_numeric; bounding box NYC â†’ NaN si fuera de rango","386,513 coordenadas invÃ¡lidas â†’ NaN; dtype ahora float64"
+Incident Zip,"dtype object; valores como ""11420.0""; ZIPs de longitud variable","strip + remove "".0"" + extract 5 dÃ­gitos con regex",Cardinalidad reducida a 639 ZIPs vÃ¡lidos
+Agency,posible variaciÃ³n de capitalizaciÃ³n / espacios,str.strip().str.upper(),cardinalidad 21 â†’ 21
+Status,posible variaciÃ³n de capitalizaciÃ³n / espacios,str.strip().str.upper(),cardinalidad 8 â†’ 8
+Open Data Channel Type,posible variaciÃ³n de capitalizaciÃ³n / espacios,str.strip().str.upper(),cardinalidad 5 â†’ 5
 Unique Key (filas),posibles duplicados por carga por chunks,"drop_duplicates(subset=[""Unique Key""])",0 filas eliminadas
-múltiples columnas categóricas,dtype object en columnas de baja cardinalidad — alto consumo de memoria,"astype(""category"") para campos con <200 valores únicos",Memoria reducida de 76 MB a 40 MB
+mÃºltiples columnas categÃ³ricas,dtype object en columnas de baja cardinalidad â€” alto consumo de memoria,"astype(""category"") para campos con <200 valores Ãºnicos",Memoria reducida de 11069 MB a 4125 MB

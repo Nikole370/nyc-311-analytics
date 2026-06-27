@@ -1,21 +1,36 @@
 Borough,year,n_solicitudes
-Bronx,2023,2183
-Bronx,2024,7377
-Bronx,2025,8306
-Bronx,2026,2489
-Brooklyn,2023,3628
-Brooklyn,2024,10422
-Brooklyn,2025,10726
-Brooklyn,2026,3676
-Manhattan,2023,2520
-Manhattan,2024,7178
-Manhattan,2025,7209
-Manhattan,2026,2211
-Queens,2023,2755
-Queens,2024,8341
-Queens,2025,8779
-Queens,2026,2903
-Staten Island,2023,393
-Staten Island,2024,1231
-Staten Island,2025,1495
-Staten Island,2026,572
+Bronx,2020,615354
+Bronx,2021,664667
+Bronx,2022,733773
+Bronx,2023,627783
+Bronx,2024,738038
+Bronx,2025,836496
+Bronx,2026,249731
+Brooklyn,2020,861507
+Brooklyn,2021,956838
+Brooklyn,2022,925815
+Brooklyn,2023,1000855
+Brooklyn,2024,1045072
+Brooklyn,2025,1078329
+Brooklyn,2026,362041
+Manhattan,2020,561782
+Manhattan,2021,645979
+Manhattan,2022,641992
+Manhattan,2023,685347
+Manhattan,2024,722755
+Manhattan,2025,725014
+Manhattan,2026,227739
+Queens,2020,715212
+Queens,2021,775917
+Queens,2022,729462
+Queens,2023,776644
+Queens,2024,827070
+Queens,2025,878211
+Queens,2026,289401
+Staten Island,2020,142753
+Staten Island,2021,161868
+Staten Island,2022,135093
+Staten Island,2023,128092
+Staten Island,2024,121197
+Staten Island,2025,134299
+Staten Island,2026,56713
