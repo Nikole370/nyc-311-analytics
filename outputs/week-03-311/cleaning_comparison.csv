@@ -1,17 +1,17 @@
 column,missing_pct_before,n_unique_before,missing_pct_after,n_unique_after
-Closed Date,2.96,88295,2.96,88295
-Problem Detail,2.67,770,2.67,770
-Council District,2.16,51,2.16,51
-Latitude,1.65,63068,1.65,63068
-Longitude,1.65,63068,1.65,63068
-Incident Zip,0.98,379,0.98,216
-Agency,0.0,16,0.0,16
-Unique Key,0.0,94500,0.0,94500
-Status,0.0,7,0.0,7
-Problem,0.0,187,0.0,187
-Created Date,0.0,94218,0.0,94218
-Community Board,0.0,76,0.0,76
-Borough,0.0,6,0.11,5
+Council District,2.35,52,2.35,52
+Closed Date,1.94,13674398,1.94,13674398
+Latitude,1.85,1371468,1.85,1371467
+Longitude,1.85,1371494,1.85,1371493
+Incident Zip,1.44,651,1.44,639
+Problem Detail,0.76,1293,0.76,1293
+Community Board,0.18,78,0.18,78
+Borough,0.18,6,0.37,5
+Problem,0.0,272,0.0,272
+Unique Key,0.0,20855981,0.0,20855981
+Created Date,0.0,16773747,0.0,16773747
+Agency,0.0,21,0.0,21
+Status,0.0,8,0.0,8
 Police Precinct,0.0,78,0.0,78
 Open Data Channel Type,0.0,5,0.0,5
-year,0.0,4,0.0,4
+year,0.0,7,0.0,7

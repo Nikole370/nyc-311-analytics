@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E4 · NYC 311 Analytics — Segmentación, cálculos analíticos y fuentes Tableau</title>
+<title>NYC 311 Analytics — Segmentación, métricas derivadas y fuentes para Tableau</title>
 <style>
   :root {
     --bg: #f3f4f6;
@@ -113,8 +113,8 @@
 
   <section class="slide lead active">
     <h1>NYC 311 Analytics</h1>
-    <h2>Entrega 4 — Segmentación, cálculos analíticos y fuentes para Tableau</h2>
-    <p style="margin-top:1.4em;">Semana 11 · Data Visualization · UPC</p>
+    <h2>Segmentación, métricas derivadas y fuentes analíticas para Tableau</h2>
+    <p style="margin-top:1.4em;">Pipeline NYC 311 Service Requests (2020-Present) · modelo estrella + capa analítica</p>
     <p>Notebook <code>04-analitica-311.ipynb</code> · <code>docs/reglas-metricas-segmentos-parametros.md</code></p>
     <div class="footer"><span>NYC 311 Service Requests (2020-Present)</span><span>1</span></div>
   </section>
@@ -131,10 +131,10 @@
         <li>Visualizaciones: heatmap, cumplimiento SLA, variación interanual</li>
         <li>Insights redactados con evidencia</li>
         <li>Fuentes finales para Tableau</li>
-        <li>Estado de la entrega y próximos pasos</li>
+        <li>Estado del proyecto y próximos pasos</li>
       </ol>
     </div>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>2</span></div>
+    <div class="footer"><span>NYC 311 Analytics</span><span>2</span></div>
   </section>
 
   <section class="slide">
@@ -145,11 +145,11 @@
         <tr><td><code>01-perfilado-311.ipynb</code></td><td>Carga por chunks, perfilado, filtro geográfico, mediana vs media</td><td><span class="badge ok">Completo</span></td></tr>
         <tr><td><code>02-limpieza-311.ipynb</code></td><td>Nulos en Borough, homologación de Problem, exclusión de resolución negativa</td><td><span class="badge ok">Completo</span></td></tr>
         <tr><td><code>03-modelado-311.ipynb</code></td><td>Modelo estrella: <code>fact_311</code> + 4 dimensiones, agregaciones base</td><td><span class="badge ok">Completo</span></td></tr>
-        <tr><td><code>04-analitica-311.ipynb</code></td><td>Parámetros, segmento y métricas derivadas para Tableau</td><td><span class="badge ok">Completo — esta entrega</span></td></tr>
+        <tr><td><code>04-analitica-311.ipynb</code></td><td>Parámetros, segmento y métricas derivadas para Tableau</td><td><span class="badge ok">Completo</span></td></tr>
       </table>
       <p style="margin-top:1em;">Cada notebook solo depende de la salida del anterior (<code>outputs/week-0X-311/</code>) — el pipeline es reproducible sin reprocesar el CSV crudo de 20.8M filas.</p>
     </div>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>3</span></div>
+    <div class="footer"><span>NYC 311 Analytics</span><span>3</span></div>
   </section>
 
   <section class="slide">
@@ -163,9 +163,9 @@ fact_311 (94,500 solicitudes)
   ├── dim_agencia   (Agency)   → 16 agencias municipales
   └── dim_problema  (Problem)  → 187 tipos + 11 familias temáticas (problem_family)
       </pre>
-      <p>El notebook 04 <strong>no reabre</strong> el dataset crudo ni <code>311_clean.csv</code>: parte directamente de <code>fact_311.csv</code> y las dimensiones ya validadas — garantiza consistencia con el modelo de la Entrega 3.</p>
+      <p>El notebook 04 <strong>no reabre</strong> el dataset crudo ni <code>311_clean.csv</code>: parte directamente de <code>fact_311.csv</code> y las dimensiones ya validadas — garantiza consistencia con el modelo estrella ya construido.</p>
     </div>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>4</span></div>
+    <div class="footer"><span>NYC 311 Analytics</span><span>4</span></div>
   </section>
 
   <section class="slide">
@@ -266,19 +266,21 @@ fact_311 (94,500 solicitudes)
 
   <section class="slide">
     <h1>Fuentes finales para Tableau</h1>
+    <p>Los notebooks 03 y 04 consolidan todas sus salidas en una sola carpeta — <code>outputs/tableau/</code> — pensada para conectarse directamente, sin reprocesamiento manual.</p>
     <div class="cols">
       <div>
-        <h3>Modelo estrella — <code>outputs/week-04-311/</code></h3>
+        <h3>Modelo estrella + agregados</h3>
         <ul>
           <li><code>fact_311.csv</code> (fuente principal)</li>
           <li><code>dim_fecha.csv</code> → relación por <code>date</code></li>
           <li><code>dim_geo.csv</code> → relación por <code>Borough</code></li>
           <li><code>dim_agencia.csv</code> → relación por <code>Agency</code></li>
           <li><code>dim_problema.csv</code> → relación por <code>Problem</code></li>
+          <li><code>agg_borough_year.csv</code>, <code>agg_resolucion_agencia.csv</code>, <code>agg_hora.csv</code>, <code>agg_familia_problema.csv</code></li>
         </ul>
       </div>
       <div>
-        <h3>Segmento y métricas — <code>outputs/week-05-311/</code></h3>
+        <h3>Segmento y métricas derivadas</h3>
         <ul>
           <li><code>seg_familia_borough.csv</code> (segmento + M1 + M2)</li>
           <li><code>metric_familia_dominante.csv</code> (M3)</li>
@@ -288,29 +290,29 @@ fact_311 (94,500 solicitudes)
         </ul>
       </div>
     </div>
-    <p style="margin-top:0.8em;">Las fuentes de <code>week-05-311</code> se conectan como fuentes independientes junto al modelo estrella, sin reprocesamiento manual.</p>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>13</span></div>
+    <p style="margin-top:0.8em;">14 archivos en total, generados con <code>save_for_tableau_final()</code> al ejecutar los notebooks 03 y 04 — el segmento y las métricas se conectan como fuentes independientes junto al modelo estrella.</p>
+    <div class="footer"><span>NYC 311 Analytics · outputs/tableau/</span><span>13</span></div>
   </section>
 
   <section class="slide">
-    <h1>Estado de la entrega y próximos pasos</h1>
+    <h1>Estado del proyecto y próximos pasos</h1>
     <div class="content">
       <table>
-        <tr><th>Entregable E4</th><th>Estado</th></tr>
+        <tr><th>Componente</th><th>Estado</th></tr>
         <tr><td>Notebook de cálculos analíticos (<code>04-analitica-311.ipynb</code>)</td><td><span class="badge ok">Completo</span></td></tr>
         <tr><td>Documento de reglas de métricas, segmentos y parámetros</td><td><span class="badge ok">Completo</span></td></tr>
-        <tr><td>Fuentes finales para Tableau (<code>outputs/week-04-311</code>, <code>week-05-311</code>)</td><td><span class="badge ok">Completo</span></td></tr>
-        <tr><td>Workbook de Tableau</td><td><span class="badge na">No aplica esta semana</span></td></tr>
-        <tr><td>Presentación (sin video esta semana)</td><td><span class="badge ok">Esta presentación</span></td></tr>
+        <tr><td>Fuentes consolidadas para Tableau (<code>outputs/tableau/</code>, 14 archivos)</td><td><span class="badge ok">Completo</span></td></tr>
+        <tr><td>Workbook de Tableau / dashboard</td><td><span class="badge pending">Próximo hito</span></td></tr>
       </table>
-      <h3>Próximos pasos — E5 (semana 13)</h3>
+      <h3>Próximos pasos</h3>
       <ul>
-        <li>Dashboard alpha en Tableau usando <code>fact_311</code> + segmento + métricas de esta entrega</li>
+        <li>Dashboard alpha en Tableau usando <code>fact_311</code> + segmento + métricas derivadas</li>
         <li>1 vista longitudinal (tendencia) + 1 vista transversal (comparación por borough)</li>
         <li>3-5 insights exploratorios adicionales, redactados con evidencia</li>
+        <li>Evaluar escalar el pipeline al 100% de los datos filtrados (<code>SAMPLE_RATE = 1.0</code>, ~20.4M filas) si el volumen lo justifica</li>
       </ul>
     </div>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>14</span></div>
+    <div class="footer"><span>NYC 311 Analytics</span><span>14</span></div>
   </section>
 
   <section class="slide lead">
@@ -324,7 +326,7 @@ fact_311 (94,500 solicitudes)
         <li>Knaflic, C. — <em>Storytelling with Data</em></li>
       </ul>
     </div>
-    <div class="footer"><span>NYC 311 Analytics · E4</span><span>15</span></div>
+    <div class="footer"><span>NYC 311 Analytics</span><span>15</span></div>
   </section>
 
 </div>
