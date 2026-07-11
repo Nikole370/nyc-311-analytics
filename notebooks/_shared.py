@@ -36,8 +36,7 @@ def ensure_output_dir(week_slug: str) -> Path:
 
 def save_for_tableau_final(df: pd.DataFrame, name: str) -> Path:
     """Guarda una copia consolidada del CSV final en outputs/tableau/,
-    la carpeta única que se conecta en Tableau (ver plan en
-    nyc-311-analytics-docs/plan-procesamiento-completo-tableau.md)."""
+    la carpeta única que se conecta en Tableau."""
     base = PROJECT_ROOT / 'outputs' / 'tableau'
     base.mkdir(parents=True, exist_ok=True)
     path = base / f'{name}.csv'

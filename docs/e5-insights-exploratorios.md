@@ -53,9 +53,3 @@ Pregunta analítica: ¿Qué patrones de quejas ciudadanas en NYC revelan inefici
 **Acción sugerida:** Para E6, investigar qué tipos de quejas concretas componen "Otros" usando el campo `Problem` (nivel granular). Esto permitirá segmentar mejor y posiblemente revelar familias emergentes no capturadas por la clasificación actual.
 
 **Evidencia:** Vista "E5 - Comparación por familia"
-
----
-
-## Notas para la exposición
-
-El guion de presentación vive en el repositorio de documentación (`nyc-311-analytics-docs/guias/`), no en este repo de código.

@@ -22,8 +22,6 @@ Análisis exploratorio y visual de ~20.8 millones de solicitudes de servicio ciu
 | E6 · Dashboard final (4 KPIs + 6 vistas, incl. PCA) | ✅ Completo, [publicado en Tableau Public](https://public.tableau.com/app/profile/nikole.garcia/viz/Libro2_17838084521540/Final?publish=yes) | `tableau/Libro2.twb`, dashboard `Final` |
 | E6 · Historia visual y QA técnico | ✅ Completo | `docs/index.html`, `docs/qa-tecnico-final.md` |
 
-Detalle de brechas y plan de trabajo restante de E6: [`nyc-311-analytics-docs/guias/E6-TRABAJO-FINAL.md`](../nyc-311-analytics-docs/guias/E6-TRABAJO-FINAL.md) (repositorio de documentación, separado de este).
-
 ---
 
 ## Preguntas analíticas
