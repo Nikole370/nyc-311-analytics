@@ -3,7 +3,9 @@
 Análisis exploratorio y visual de ~20.8 millones de solicitudes de servicio ciudadano en Nueva York (2020–2026), usando Python para la cadena de datos y Tableau para las visualizaciones finales.
 
 **Dataset**: [311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9) — NYC Open Data  
-**Descarga**: 2026-04-18 · 44 columnas · 20,855,981 filas
+**Descarga**: 2026-04-18 · 44 columnas · 20,855,981 filas  
+**Dashboard interactivo**: [Ver en Tableau Public →](https://public.tableau.com/app/profile/nikole.garcia/viz/Libro2_17838084521540/Final?publish=yes)  
+**Presentación**: [Ver historia visual →](https://nikole370.github.io/nyc-311-analytics/)
 
 ---
 
@@ -17,8 +19,7 @@ Análisis exploratorio y visual de ~20.8 millones de solicitudes de servicio ciu
 | 04 · Segmentación, métricas y parámetros | ✅ Completo | `notebooks/04-analitica-311.ipynb` |
 | 05 · Componente avanzado — PCA sobre perfiles de agencia | ✅ Completo | `notebooks/05-pca-agencias.ipynb` |
 | E5 · Dashboard alpha en Tableau | ✅ Completo | `tableau/Libro2.twb`, dashboard `Alpha` |
-| E6 · Vista longitudinal y transversal | 🟡 Hojas creadas (`E6 - Tendencia temporal`, `E6 - Comparación por Borough`), pendiente integrarlas a un dashboard final | `tableau/Libro2.twb` |
-| E6 · PCA en Tableau | 🟡 Datos exportados (`outputs/tableau/agency_pca_profile.csv`), pendiente conectar y graficar | — |
+| E6 · Dashboard final (4 KPIs + 6 vistas, incl. PCA) | ✅ Completo, [publicado en Tableau Public](https://public.tableau.com/app/profile/nikole.garcia/viz/Libro2_17838084521540/Final?publish=yes) | `tableau/Libro2.twb`, dashboard `Final` |
 | E6 · Historia visual y QA técnico | ✅ Completo | `docs/index.html`, `docs/qa-tecnico-final.md` |
 
 Detalle de brechas y plan de trabajo restante de E6: [`nyc-311-analytics-docs/guias/E6-TRABAJO-FINAL.md`](../nyc-311-analytics-docs/guias/E6-TRABAJO-FINAL.md) (repositorio de documentación, separado de este).
@@ -74,9 +75,9 @@ NYC-311-ANALYTICS/
 │   ├── reglas-metricas-segmentos-parametros.md ← fórmulas y justificación de M1-M5, P1-P3 (notebook 04)
 │   ├── reglas-componente-avanzado-pca.md       ← por qué PCA, variables, interpretación, límites (notebook 05)
 │   ├── qa-tecnico-final.md                     ← validación técnica, contraste/accesibilidad, limitaciones (E6)
+│   ├── resumen-ejecutivo.md                    ← síntesis de 1 página (E6)
 │   ├── e5-insights-exploratorios.md            ← insights redactados con evidencia (E5)
 │   ├── e5-tabla-seleccion-graficos.md          ← gráficos aceptados y descartados con justificación (E5)
-│   ├── e5-script-exposicion.md                 ← guion de exposición de 2 min (E5)
 │   └── index.html                              ← historia visual / presentación autocontenida (GitHub Pages)
 ├── notebooks/
 │   ├── 01-perfilado-311.ipynb     ← perfilado, granularidad y viabilidad de preguntas
@@ -92,7 +93,7 @@ NYC-311-ANALYTICS/
 │   ├── week-05-311/               ← analítica: segmento, métricas derivadas, parámetros
 │   ├── week-06-311/               ← PCA: perfil por agencia, loadings, varianza explicada, clusters
 │   └── tableau/                   ← copia consolidada — la única carpeta que se conecta en Tableau
-├── tableau/                       ← workbook (Libro2.twb) — dashboard Alpha (E5) + hojas E6 en construcción
+├── tableau/                       ← workbook (Libro2.twb) — dashboards Alpha (E5) y Final (E6, publicado)
 ├── .gitignore
 └── README.md
 ```
@@ -121,11 +122,13 @@ jupyter notebook notebooks/01-perfilado-311.ipynb
 ## Herramientas
 
 - **Python 3.11** — pandas, numpy, matplotlib, seaborn, scikit-learn (PCA, KMeans)
-- **Tableau Desktop / Public** — dashboard alpha completo, dashboard final en construcción (E6)
+- **Tableau Desktop / Public** — dashboards `Alpha` (E5) y `Final` (E6), [publicado en Tableau Public](https://public.tableau.com/app/profile/nikole.garcia/viz/Libro2_17838084521540/Final?publish=yes)
 - **Jupyter Notebooks** — cadena de análisis documentada y reproducible, 01-05
 
 ---
 
 ## Historia visual / presentación
+
+[**Ver la presentación →**](https://nikole370.github.io/nyc-311-analytics/)
 
 `docs/index.html` es una presentación HTML autocontenida (navegable con flechas del teclado o clic) publicada vía GitHub Pages. Se actualiza en cada entrega para reflejar el estado real del proyecto — no es un artefacto estático de una sola entrega.
