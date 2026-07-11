@@ -651,9 +651,12 @@
       <column caption='Categoría de resolución' datatype='string' name='[Calculation_0858735833980933]' role='dimension' type='nominal'>
         <calculation class='tableau' formula='IF [resolution_hours] &lt;= 24 THEN &quot;1. &lt; 1 día&quot;&#13;&#10;ELSEIF [resolution_hours] &lt;= 72 THEN &quot;2. 1–3 días&quot;&#13;&#10;ELSEIF [resolution_hours] &lt;= 168 THEN &quot;3. 3–7 días&quot;&#13;&#10;ELSE &quot;4. Más de 7 días&quot;&#13;&#10;END' />
       </column>
+<<<<<<< HEAD
       <column caption='Mes-Año' datatype='datetime' name='[Calculation_1254564964495360]' role='dimension' type='ordinal'>
         <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [date])' />
       </column>
+=======
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
       <column caption='% resuelto en menos de 1 día' datatype='real' default-format='p0.0%' name='[Calculation_2113008451899392]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='SUM(IF [resolution_hours] &lt;= 24 THEN 1 ELSE 0 END) / COUNT([Unique Key])' />
       </column>
@@ -1957,7 +1960,11 @@
                       <format attr='border-style' value='solid' />
                       <format attr='border-width' value='2' />
                       <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+<<<<<<< HEAD
                       <format attr='margin' value='4' />
+=======
+                      <format attr='margin' value='0' />
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
                       <format attr='padding' value='0' />
                       <format attr='padding-top' value='10' />
                       <format attr='padding-right' value='10' />
@@ -2044,8 +2051,13 @@ o necesitan un SLA diferenciado.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='97778' id='28' param='vert' type-v2='layout-flow' w='98750' x='625' y='1111'>
+=======
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97778' id='26' param='vert' type-v2='layout-flow' w='98750' x='625' y='1111'>
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
                 <zone fixed-size='37' forceUpdate='true' h='6250' id='3' type-v2='text' w='97188' x='1406' y='2500'>
                   <formatted-text>
                     <run bold='true' fontcolor='#ffffff' fontsize='20'>NYC 311 — ¿Qué quejas concentran más demanda y menor eficiencia?</run>
@@ -2264,8 +2276,13 @@ o necesitan un SLA diferenciado.</run>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='97778' id='23' param='vert' type-v2='layout-flow' w='98750' x='625' y='1111'>
+=======
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97778' id='21' param='vert' type-v2='layout-flow' w='98750' x='625' y='1111'>
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
                 <zone forceUpdate='true' h='22222' id='5' type-v2='text' w='98750' x='625' y='1111'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Courier New' fontsize='20'>NYC 311 — ¿Qué quejas concentran más demanda y menor eficiencia?</run>
@@ -2334,7 +2351,7 @@ o necesitan un SLA diferenciado.</run>
       <simple-id uuid='{A54F6DE8-42BF-4D14-A2F5-93166BA9C3DC}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows show-side-pane='false' source-height='30'>
     <window class='worksheet' name='Hoja 1'>
       <cards>
         <edge name='left'>
@@ -2469,6 +2486,7 @@ o necesitan un SLA diferenciado.</run>
       </viewpoint>
       <simple-id uuid='{930872E2-2AFA-4DFC-B9A1-F301043E7CB9}' />
     </window>
+<<<<<<< HEAD
     <window class='worksheet' name='E6 - Tendencia temporal'>
       <cards>
         <edge name='left'>
@@ -2529,6 +2547,8 @@ o necesitan un SLA diferenciado.</run>
       </viewpoint>
       <simple-id uuid='{2CA1D7CA-33CC-4F52-B5D2-95945CD6A696}' />
     </window>
+=======
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
     <window class='worksheet' name='KPI - Solicitudes'>
       <cards>
         <edge name='left'>
@@ -4082,6 +4102,7 @@ o necesitan un SLA diferenciado.</run>
       jp6GQJahs7qyit7hSs63l07vbuT42bMz/PT2NPObOYTqYXL6ErZeZGt1kU/ufMVA5hq+xiG7
       +0cn9K5ODbGym+fVtxd45ebJBrvdI1D9YUbVEkuHZQQqPo/F9uoaiyvbDCZD/K9X/4WBocEe
       XlPST/4/+3vQkRrdT9oAAAAASUVORK5CYII=
+<<<<<<< HEAD
     </thumbnail>
     <thumbnail height='154' name='E6 - Comparación por Borough' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAACaCAYAAAD/yUeWAAAACXBIWXMAABJ0AAASdAHeZh94
@@ -4408,6 +4429,8 @@ o necesitan un SLA diferenciado.</run>
       X8GBQoUxaYiRbCO3K8aspsEY8wCGGAOhKGi3CmMYuo6qWW4ZYkwMARbt/TeT5AggSTfJlMG/
       ++Kr/PJHDnP2cOUjX+cBDTF3u700y3svUVT1g+dQEsk2YLWo+Fx2VtOQIuX/A07Mk7+vcTj0
       AAAAAElFTkSuQmCC
+=======
+>>>>>>> 8b6fc612def6c183ac80814aca6f3dac635fd30b
     </thumbnail>
     <thumbnail height='150' name='Hoja 1' width='184'>
       iVBORw0KGgoAAAANSUhEUgAAALgAAACWCAYAAABtlUKBAAAACXBIWXMAABJ0AAASdAHeZh94
