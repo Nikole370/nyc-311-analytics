@@ -2,4 +2,3 @@
 *.csv
 notebooks/__pycache__/
 .claude/
-.obsidian/
